@@ -13,6 +13,13 @@ var alap = "kepek/kartya_hatlap.png"; //hátlap elérési út
 var pontok = 0; //aktuális pontok
 
 
-
+function kezd(){
+    for (var i = 0; i < tomb.length; i++) {
+        $("section img").eq(i).attr("src",alap);
+    }
+    $("section img").click(ellenoriz);
+    kever();
+    pontok=0;
+}
 
 
