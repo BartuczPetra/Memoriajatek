@@ -9,12 +9,13 @@ $(function () {
 var tomb = []; //képek tárolása
 var elso = true; //számon tartsuk hányadik kártyát fordítottuk meg
 var elozo; //a jelenleg felfordított kártyák indexét tárolja
+var mostani;
 var alap = "kepek/kartya_hatlap.png"; //hátlap elérési út
 var pontok = 0; //aktuális pontok
 
 
 function kezd(){
-    for (var i = 0; i < tomb.length; i++) {
+    for (var i = 0; i < 12; i++) {
         $("section img").eq(i).attr("src",alap);
     }
     $("section img").click(ellenoriz);
@@ -26,3 +27,14 @@ function kever(){
 //    tomb.sort(function(a, b){return 0.5 - Math.random();});
     
 }
+function ellenoriz(){
+    fordit();
+    if (elozo.length===1 && mostani.length===1 && tomb[elozo]===tomb[mostani]) {
+        pontok+=1;
+    }
+    else {
+        $("section img").remove(ellenoriz);
+        setTimeout(visszafordit, 1000);
+    }
+}
+
