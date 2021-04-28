@@ -1,5 +1,8 @@
 $(function () {
+    tomb["kepek/1.jpg","kepek/2.jpg","kepek/3.jpg","kepek/2.jpg","kepek/4.jpg","kepek/4.jpg","kepek/5.jpg","kepek/6.jpg","kepek/7.jpg","kepek/5.jpg","kepek/8.jpg","kepek/7.jpg","kepek/9.jpg","kepek/8.jpg","kepek/6.jpg","kepek/3.jpg","kepek/9.jpg","kepek/1.jpg"];
     
+    $("#ujJatek").click(kezd);
+    kezd();
 
 });
 
