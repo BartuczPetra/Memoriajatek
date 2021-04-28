@@ -1,31 +1,15 @@
-$(function(){
+$(function () {
+    
 
-  $("div").html("Helo");
-  $("div").append("<img>");
-  $("div img").eq(0).attr("src",kepek[0].eleresiUt);
-  $("div img").eq(0).attr("alt",kepek[0].alt);
-  $("div").append("<img>");
-  $("div img").eq(1).attr("src",kepek[1].eleresiUt);
-  $("div img").eq(1).attr("alt",kepek[1].alt);
-  $("div img").click(kattintasra);
-  
-  
 });
 
+var tomb = []; //képek tárolása
+var elso = true; //számon tartsuk hányadik kártyát fordítottuk meg
+var elozo; //a jelenleg felfordított kártyák indexét tárolja
+var alap = "kepek/kartya_hatlap.png"; //hátlap elérési út
+var pontok = 0; //aktuális pontok
 
-var kep1={
-    eleresiUt:"kepek/1.jpg",
-    alt:"ürge"
-};
 
-var kep2={
-    eleresiUt:"kepek/2.jpg",
-    alt:"zebra"
-};
 
-var kepek=[kep1,kep2];
 
-function kattintasra(){
-    $(this).attr("src","kepek/1.jpg");
-    $(this).attr("alt","mókus");
-}
+
