@@ -13,10 +13,15 @@ var mostani;
 var alap = "kepek/kartya_hatlap.png"; //hátlap elérési út
 var pontok = 0; //aktuális pontok
 
-function kezd() {
+function kezd(){
     for (var i = 0; i < 12; i++) {
         $("section img").eq(i).attr("src", alap);
 //        $("section img").eq(i).toggle(fordit);
+
+
+
+    
+
     }
     $("section img").click(fordit);
 //    $("section img").toggle(fordit);
@@ -37,6 +42,7 @@ function ellenoriz() {
         setTimeout(visszafordit, 1000);
     }
 }
+
 function fordit() {
 //    for (var i = 0; i < 12; i++) {
 //        if ("section img" === tomb[i]) {
