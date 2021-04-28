@@ -1,0 +1,21 @@
+@charset "utf-8";
+main {
+    max-width: 800px;
+    background: white;
+    margin: auto;
+}
+main, header, section, article, footer {
+    border: 1px solid gray;
+}
+
+header h1 {
+    text-align: center;
+}
+section{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+}
+
