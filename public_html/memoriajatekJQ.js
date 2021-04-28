@@ -22,4 +22,7 @@ function kezd(){
     pontok=0;
 }
 
-
+function kever(){
+//    tomb.sort(function(a, b){return 0.5 - Math.random();});
+    
+}
